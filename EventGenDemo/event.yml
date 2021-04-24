@@ -1,0 +1,26 @@
+ScreenName:
+  - name: top
+  - name: back_history
+  - name: back_history_list
+ObjectParameter:
+  Project:
+    - let:
+      - name: projectId
+      - type: String
+    - let:
+      - name: projectName
+      - type: String
+  Reward:
+    - let:
+      - name: rewardId
+      - type: String
+Event:
+  back_history:
+    tap_project:
+      project: Project
+      index: Int
+  back_history_list:
+    tap_project:
+      project: Project
+      index: Int
+  
